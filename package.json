@@ -1,0 +1,42 @@
+{
+  "name": "extension-vscode",
+  "displayName": "Extension VS Code",
+  "description": "Proyecto base extensiones VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension-vscode.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "extension-vscode.testDB2Connection",
+        "title": "Test DB2 Connection"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+  "dependencies": {
+    "odbc": "^2.4.9"
+  }
+}
