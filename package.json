@@ -37,6 +37,6 @@
     "eslint": "^9.25.1"
   },
   "dependencies": {
-    "odbc": "^2.4.9"
+    "node-jt400": "^5.0.4"
   }
 }
